@@ -1,45 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111"><link rel="manifest" href="/manifest.json">
 <title>Fedo Designs</title>
 <style>
-body{margin:0;background:#f7f3eb;color:#111;font-family:Arial;text-align:center}
-header{background:#111;color:#d4af65;padding:35px 15px}
-h1{font-family:Georgia;font-size:38px;margin:0}
-header p{color:#ddd}
-main{padding:25px}
-.hero{background:#171717;color:white;padding:35px 20px;border-radius:20px}
-h2{font-family:Georgia;font-size:28px}
-button{background:#d4af65;border:0;padding:14px 24px;border-radius:30px;font-weight:bold}
-.products{display:grid;gap:15px;margin-top:25px}
-.card{background:white;padding:25px;border-radius:18px;box-shadow:0 3px 15px #0002}
-.price{font-weight:bold;font-size:20px}
-footer{padding:30px;color:#666}
-</style>
-</head>
-<body>
-<header>
-<h1>FEDO DESIGNS</h1>
-<p>Luxury Fashion • Nakuru, Kenya</p>
-</header>
-<main>
-<div class="hero">
-<h2>Designed to make you stand out.</h2>
-<p>Discover stylish fashion designs made with elegance, creativity and passion.</p>
-<button onclick="document.getElementById('shop').scrollIntoView()">Explore Designs</button>
-</div>
-<h2 id="shop">Our Designs</h2>
-<div class="products">
-<div class="card"><h2>Classic Elegance</h2><p>Timeless fashion with a luxury finish.</p><p class="price">KES 3,500</p><button>View Design</button></div>
-<div class="card"><h2>Modern Luxe</h2><p>Contemporary style for a confident look.</p><p class="price">KES 4,500</p><button>View Design</button></div>
-<div class="card"><h2>Custom Design</h2><p>Personalized fashion designed for you.</p><p class="price">From KES 5,000</p><button>Contact Us</button></div>
-</div>
-</main>
-<footer>
-Fedo Designs<br>
-0790456609<br>
-fedodesign@gmail.com
-</footer>
-</body>
-</html>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f7f4ee;color:#171717}
+header{background:#111;color:#fff;padding:28px 20px;text-align:center}h1{margin:0;font:34px Georgia,serif;letter-spacing:2px}
+header p{margin:8px 0;color:#d7c18a}main{max-width:900px;margin:auto;padding:24px 18px}
+.hero{background:#171717;color:#fff;border-radius:18px;padding:30px 22px;margin-bottom:22px}
+.hero h2{font:28px Georgia,serif;margin:0 0 10px}.hero p{line-height:1.6;color:#ddd}
+button{border:0;border-radius:999px;padding:13px 20px;background:#c6a15b;color:#111;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 18px #0001}.card h3{font-family:Georgia,serif}
+.price{font-weight:700;margin:12px 0}footer{text-align:center;padding:28px;color:#666;font-size:14px}
+</style></head>
+<body><header><h1>FEDO DESIGNS</h1><p>Luxury Fashion • Nakuru, Kenya</p></header>
+<main><section class="hero"><h2>Designed to make you stand out.</h2>
+<p>Discover stylish fashion designs and services from Fedo Designs. Browse our collection and get in touch for custom fashion work.</p>
+<button onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Explore Designs</button></section>
+<h2 id="shop">Featured Designs</h2><div class="grid">
+<div class="card"><h3>Classic Elegance</h3><p>Timeless, refined fashion styling.</p><div class="price">KES 3,500</div><button>View</button></div>
+<div class="card"><h3>Modern Luxe</h3><p>Contemporary fashion with a luxury finish.</p><div class="price">KES 4,500</div><button>View</button></div>
+<div class="card"><h3>Custom Design</h3><p>Personalized fashion made for you.</p><div class="price">From KES 5,000</div><button>Contact</button></div>
+</div></main><footer>Fedo Designs · 0790456609 · fedodesign@gmail.com</footer>
+<script>if("serviceWorker"in navigator)navigator.serviceWorker.register("/sw.js").catch(()=>{});</script>
+</body></html>
